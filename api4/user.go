@@ -1263,6 +1263,7 @@ func updateUserRoles(c *Context, w http.ResponseWriter, r *http.Request) {
 	ReturnStatusOK(w)
 }
 
+// Datajoy: this is how you activate or deactivate a user
 func updateUserActive(c *Context, w http.ResponseWriter, r *http.Request) {
 	c.RequireUserId()
 	if c.Err != nil {

@@ -1241,6 +1241,7 @@ func (c *Client4) UpdateUserActive(userId string, active bool) (bool, *Response)
 	return CheckStatusOK(r), BuildResponse(r)
 }
 
+// Datajoy: This is a method for deactivating a user 
 // DeleteUser deactivates a user in the system based on the provided user id string.
 func (c *Client4) DeleteUser(userId string) (bool, *Response) {
 	r, err := c.DoApiDelete(c.GetUserRoute(userId))

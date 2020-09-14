@@ -10,13 +10,13 @@ variables](https://www.postgresql.org/docs/9.3/static/libpq-envars.html).
 
 Example:
 
-	PGHOST=/run/postgresql go test
+    PGHOST=/run/postgresql go test
 
 ## Benchmarks
 
 A benchmark suite can be run as part of the tests:
 
-	go test -bench .
+    go test -bench .
 
 ## Example setup (Docker)
 

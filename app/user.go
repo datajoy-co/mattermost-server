@@ -993,6 +993,7 @@ func (a *App) invalidateUserChannelMembersCaches(userId string) *model.AppError 
 	return nil
 }
 
+// Datajoy: This is where we tell the database about a user being deactivated
 func (a *App) UpdateActive(user *model.User, active bool) (*model.User, *model.AppError) {
 	user.UpdateAt = model.GetMillis()
 	if active {

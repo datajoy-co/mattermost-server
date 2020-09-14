@@ -1,0 +1,27 @@
+{
+    "name": "mattermost-server",
+    "version": "1.0.0",
+    "description": "Follow [this guide](https://developers.mattermost.com/contribute/server/developer-setup/)",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "make run-server",
+        "dev:stop": "make stop-server",
+        "docker:stop": "make stop-docker",
+        "db": "psql --host=localhost --dbname=mattermost_test --username=mmuser"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/datajoy-co/mattermost-server.git"
+    },
+    "author": "Datajoy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/datajoy-co/mattermost-server/issues"
+    },
+    "homepage": "https://github.com/datajoy-co/mattermost-server#readme"
+}
